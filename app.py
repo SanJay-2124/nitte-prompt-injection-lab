@@ -971,10 +971,7 @@ with gr.Blocks(title="Prompt Injection & Jailbreak Lab") as demo:
                 lines=1,
                 info="Copy the API base URL from your Nexus dashboard. Use HTTPS for remote services.",
             )
-            gr.Markdown(
-                f"Need credentials? [Open the Nexus portal ↗]({config.NEXUS_PORTAL_URL})",
-                elem_classes=["portal-link"],
-            )
+         
             connect_btn = gr.Button("Verify connection & start", variant="primary", size="lg")
             connect_status = gr.Markdown(value="", visible=True, elem_classes=["connect-status"])
 
