@@ -58,7 +58,7 @@ Evaluate the assistant's resistance to prompt injection and information disclosu
 
 The application enforces strict separation of concerns between client and server:
 
-1. **Fixed Backend Model (`nova-micro`)**:
+1. **Fixed Backend Model**:
    - The model identifier is strictly maintained on the backend in `config.py`.
    - Never exposed to frontend HTML, JavaScript bundles, chat responses, or exported files.
    - Client requests cannot specify, override, or query the model name.
