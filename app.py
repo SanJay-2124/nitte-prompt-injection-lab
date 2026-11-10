@@ -1166,8 +1166,9 @@ with gr.Blocks(title="Prompt Injection & Jailbreak Lab") as demo:
 
 if __name__ == "__main__":
     is_spaces = "SPACE_ID" in os.environ or "HF_SPACE_ID" in os.environ
-    server_name = "0.0.0.0" if is_spaces else os.environ.get("GRADIO_SERVER_NAME", "127.0.0.1")
+    server_name = "0.0.0.0"
     port_env = os.environ.get("PORT")
+
     launch_kwargs = dict(
         server_name=server_name,
         share=False,
